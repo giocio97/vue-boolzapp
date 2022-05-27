@@ -1,0 +1,53 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+   background-color:  rgb(159, 159, 159);
+   font-family: 'Lato', sans-serif;
+}
+
+.avatar{
+    width: 30px;
+    height: 30px;
+    object-fit: cover;
+   
+}
+
+.intestazione{
+    background-color: #eaeaea;
+    height: 10vh;
+    margin-top: 20px;
+    border-right: 1px solid rgb(159, 159, 159);
+    padding: 10px;
+    
+}
+
+.ultimo-accesso{
+    font-size: 10px;
+}
+
+#notifiche{
+    background-color: #8edafc;
+    padding: 8px;
+    height: 12vh;
+    width: 100%;
+}
+
+.corpo-centrale{
+    background-image: url(../img/wp_132.jpg);
+    background-position: center;
+    background-size: cover;
+    height: calc(100vh - 10vh);
+}
+
+.input-text{
+background-color: white;
+height: 5vh;
+padding: 10px;
+width: 100%;
+
+}
+
