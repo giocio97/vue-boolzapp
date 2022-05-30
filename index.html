@@ -17,8 +17,9 @@
     <title>Boolzapp</title>
 </head>
 <body>
-    <div class="container app ">
+    <div id="appjs" class="container app ">
         <div class="row">
+            <!-- intestazione sx -->
             <div  class="col-6 col-md-4 intestazione sx">
                 <div class="row ">
                     <div class="col-sm-4 col-xs-4">
@@ -39,6 +40,7 @@
                   </div>
                
             </div>
+            <!-- intestazione dx -->
             <div class="col-md-8 intestazione">
 
                 <div class="row ">
@@ -93,14 +95,15 @@
                                 <!-- contatti -->
                         <div class="col-6 col-md-12 contatti">
                             <ul>
-                                <li>
+                                <li v-for="(item, i) in whatsjs" :key="i">
+                                   
                                     <div class="row ">
                                         <div class="col-sm-2 col-xs-2 ">
-                                            <img class="avatar" src='https://avataaars.io/?avatarStyle=Circle&topType=LongHairFro&accessoriesType=Blank&hairColor=Blonde&facialHairType=BeardLight&facialHairColor=BrownDark&clotheType=Hoodie&clotheColor=Pink&eyeType=Hearts&eyebrowType=UpDown&mouthType=Tongue&skinColor=Pale'/>
+                                            <img :src="item.avatar" :alt="item.name" class="avatar"/>
                                             
                                         </div>
                                         <div class=" col-sm-4 col-xs-4 chat-attiva nome-sub">
-                                            <span>Mario</span><br>
+                                            <span> {{item.name}} </span><br>
                                             <span class="ultimo-accesso">ultimo messaggio inviato</span>
                                         </div>
 
@@ -114,7 +117,7 @@
                                     
                                    
                                 </li>
-                                <li>
+                                <!-- <li>
                                     <img class="avatar" src='https://avataaars.io/?avatarStyle=Circle&topType=ShortHairShortWaved&accessoriesType=Blank&hairColor=Blue&facialHairType=BeardMedium&facialHairColor=BrownDark&clotheType=CollarSweater&clotheColor=Blue01&eyeType=Happy&eyebrowType=FlatNatural&mouthType=Disbelief&skinColor=Brown'/>
                                     <span>Michele</span><br>
                                     <span>ultimo messaggio inviato</span>
@@ -151,7 +154,7 @@
                                     <img class="avatar" src='https://avataaars.io/?avatarStyle=Circle&topType=LongHairNotTooLong&accessoriesType=Kurt&hairColor=Black&facialHairType=Blank&clotheType=CollarSweater&clotheColor=Red&eyeType=WinkWacky&eyebrowType=RaisedExcited&mouthType=Tongue&skinColor=Light'/>
                                     <span>Eva</span><br>
                                     <span>ultimo messaggio inviato</span>
-                                </li>
+                                </li> -->
                             </ul>
                         </div>
                     </div>
@@ -244,7 +247,8 @@
     
 
     <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
-    <script src="js/script.js"></script>
+    <!-- <script src="js/script.js"></script> -->
+   
 </body>
 </html>
 
