@@ -3,51 +3,178 @@
     padding: 0;
     box-sizing: border-box;
 }
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    }
+
+    a{
+      text-decoration: none;
+    }
+  
 
 body{
-   background-color:  rgb(159, 159, 159);
+  background: url(../img/bgy.png) no-repeat fixed center;
    font-family: 'Lato', sans-serif;
 }
 
+.app {
+    position: relative;
+    overflow: hidden;
+    top: 20px;
+    height: calc(100% - 38px);
+    margin: auto;
+    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, .06), 0 2px 5px 0 rgba(0, 0, 0, .2);
+  }
+
 .avatar{
-    width: 30px;
-    height: 30px;
+    width: 40px;
+    height: 40px;
     object-fit: cover;
    
 }
 
 .intestazione{
     background-color: #eaeaea;
-    height: 10vh;
-    margin-top: 20px;
-    border-right: 1px solid rgb(159, 159, 159);
+    height: 7vh;
     padding: 10px;
+    text-align: center;
     
+    
+}
+.intestazione.sx{
+    border-right: 1px solid rgb(159, 159, 159);
+}
+
+.chat-attiva{
+  text-align:start;
+  display: inline-block;
 }
 
 .ultimo-accesso{
     font-size: 10px;
+    
 }
 
-#notifiche{
+.notifiche{
     background-color: #8edafc;
     padding: 8px;
-    height: 12vh;
+    height: 75px;
     width: 100%;
+   
+}
+
+#bell-notifica{
+  background-color: white;
+  border-radius: 50%;
+  padding: 10px;
+  color: #8edafc;
 }
 
 .corpo-centrale{
     background-image: url(../img/wp_132.jpg);
     background-position: center;
     background-size: cover;
-    height: calc(100vh - 10vh);
+    
+   
 }
 
 .input-text{
 background-color: white;
-height: 5vh;
+height: 6vh;
 padding: 10px;
 width: 100%;
 
 }
+.input-text > input{
+  width: 100%;
+  
+}
+.contatti{
+background-color: white;
+height: calc(100% - 13vh - 75px);
+padding: 10px;
+width: 100%;
+}
+
+.contatti ul{
+  overflow-y:auto ;
+}
+.contatti ul li {
+    border-top: 1px solid rgb(236, 234, 234);
+    padding: 5px;
+    
+}
+.contatti ul li:hover {
+  background-color: #f2f2f2;
+}
+
+.message-body {
+   
+    width: auto;
+    height: auto;
+  }
+
+  .message-main-receiver {
+    max-width: 60%;
+  }
+  
+  .message-main-sender {
+    padding: 3px 20px ;
+    margin-left: 40%;
+    max-width: 60%;
+  }
+  
+  .message-text {
+    margin: 0 ;
+    padding: 5px ;
+    word-wrap:break-word;
+    font-weight: 200;
+    font-size: 14px;
+    padding-bottom: 0 ;
+  }
+
+  .ricevuto {
+    width: auto;
+    padding: 4px 10px 7px;
+    border-radius: 10px 10px 10px 0;
+    background: #ffffff;
+    font-size: 12px;
+    text-shadow: 0 1px 1px rgba(0, 0, 0, .2);
+    word-wrap: break-word;
+    display: inline-block;
+    margin-top: 20px;
+  }
+  
+  .inviato {
+    float: right;
+    width: auto;
+    background: #dcf8c6;
+    border-radius: 10px 10px 0 10px;
+    padding: 4px 10px 7px;
+    font-size: 12px;
+    text-shadow: 0 1px 1px rgba(0, 0, 0, .2);
+    word-wrap: break-word;
+    margin-top: 20px;
+  }
+
+.footer-text{
+    background-color: #f3eeea;
+    /* width: 100%; */
+    margin: 0;
+    padding: 10px;
+    height: 50px;
+    text-align: center;
+}
+input{
+    width: 100%;
+    padding: 2px;
+}
+
+.vuoto{
+  background-color: white;
+
+}
+
 
