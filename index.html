@@ -130,7 +130,7 @@
             <!-- corpo centrale messaggi -->
             <div class="col-md-8 corpo-centrale ">
                
-               <div v-for="item in contacts[activeChat].messages"  :key="i">
+               <div v-for="(item,i) in contacts[activeChat].messages"  :key="i">
                 <div  class="row message-body">
                     <div class="col-sm-12 message-main">
                       <div :class="inviatoORicevuto(item.status)" >

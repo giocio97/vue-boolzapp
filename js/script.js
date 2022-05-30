@@ -180,7 +180,7 @@ const whatsjs = new Vue({
                 return "inviato"
             }
         },
-        addMex(newMex){
+        addMex(){
             const nuovoMessaggio = {
                          message:this.newMex,
                         status: 'sent',
@@ -192,9 +192,10 @@ const whatsjs = new Vue({
    }
 
             if(this.newMex!==""){
-                this.contacts.messages.push(nuovoMessaggio);
+               
+                this.contacts[activeChat].messages.push(nuovoMessaggio);
                 this.newMex = "";
-                setInterval( this.contacts.messages.push(nuovoMessaggioRisp), 1000)
+                setInterval( this.contacts[activeChat].messages.push(nuovoMessaggioRisp), 1000)
             }
         }
 
