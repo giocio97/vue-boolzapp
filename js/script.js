@@ -1,7 +1,7 @@
 const whatsjs = new Vue({
     el: "#appjs",
     data: {
-        activeContact: 0,
+        activeChat: 0,
         contacts: [
             {
                 name: 'Michele',
@@ -166,6 +166,20 @@ const whatsjs = new Vue({
             }
         ]
     },
+
+    methods:{
+        selectChat(activeChat){
+            this.activeChat = activeChat;
+        },
+
+        inviatoORicevuto(status){
+            if(status == "received"){
+                return "ricevuto"
+            } else{
+                return "inviato"
+            }
+        }
+    }
         
         
         

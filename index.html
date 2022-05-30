@@ -45,11 +45,12 @@
 
                 <div class="row ">
                     <div class="col-sm-1 col-xs-1 ">
-                        <img class="avatar" src='https://avataaars.io/?avatarStyle=Circle&topType=LongHairFro&accessoriesType=Blank&hairColor=Blonde&facialHairType=BeardLight&facialHairColor=BrownDark&clotheType=Hoodie&clotheColor=Pink&eyeType=Hearts&eyebrowType=UpDown&mouthType=Tongue&skinColor=Pale'/> 
+                        
+                        <img :src="contacts[activeChat].avatar" :alt="contacts[activeChat].name" class="avatar"/>
                         
                     </div>
                     <div class=" col-sm-4 col-xs-4 chat-attiva nome-sub">
-                        <span>Mario</span><br>
+                        <span> {{contacts[activeChat].name}} </span><br>
                         <span class="ultimo-accesso">ultimo accesso oggi alle 12:00</span>
                     </div>
                     <div class="col-sm-4 col-xs-4 "></div>
@@ -95,9 +96,9 @@
                                 <!-- contatti -->
                         <div class="col-6 col-md-12 contatti">
                             <ul>
-                                <li v-for="(item, i) in contacts" :key="i">
+                                <li v-for="(item, i) in contacts" :key="i" @click="selectChat(i)">
                                    
-                                    <div class="row ">
+                                    <div class="row" >
                                         <div class="col-sm-2 col-xs-2 ">
                                             <img :src="item.avatar" :alt="item.name" class="avatar"/>
                                             
@@ -125,32 +126,39 @@
                
                
                 
-               
-                
             </div>
+            <!-- corpo centrale messaggi -->
             <div class="col-md-8 corpo-centrale ">
                
-                <div class="row message-body">
+               <div v-for="item in contacts[activeChat].messages"  :key="i">
+                <div  class="row message-body">
                     <div class="col-sm-12 message-main-sender">
-                      <div class="inviato">
+                      <div :class="inviatoORicevuto(item.status)" class="inviato">
                         <div class="message-text">
-                         Hai portato a spasso il cane?
+                        {{item.message}}
                         </div>
+                        <span class=" col-sm-1 offset-md-10 message-time">
+                            12:00
+                           </span>
                         
                       </div>
                     </div>
                   </div>
 
-                  <div class="row message-body">
-                    <div class="col-sm-12 message-main-sender">
+                  <!-- <div class="row message-body">
+                    <div class="col-sm-11 message-main-sender">
                       <div class="inviato">
                         <div class="message-text">
                           Ricordati di stendere i panni
                         </div>
+                        <span class=" col-sm-1 offset-md-10 message-time">
+                            12:00
+                           </span>
                         
                       </div>
                     </div>
-                  </div>
+                   
+                  </div> -->
 
 
 
@@ -160,10 +168,14 @@
                         <div class="message-text">
                          Tutto fatto.
                         </div>
+                        <span class=" col-sm-1 offset-md-8 message-time">
+                            12:00
+                           </span>
                         
                       </div>
                     </div>
                   </div>
+               </div>
           
                   
               
@@ -173,6 +185,8 @@
             </div>
             <div class="col-6 col-md-4 vuoto"></div>
             
+
+            <!-- fotter invio messaggi -->
                 <div  class="col-6 col-md-8  footer-text ">
                    <div class="row">
                     <div class="col-sm-1 col-xs-1 ">

@@ -135,6 +135,12 @@ width: 100%;
     padding-bottom: 0 ;
   }
 
+  .message-time {
+    font-size: 8px;
+    color: #9a9a9a;
+  
+  }
+
   .ricevuto {
     width: auto;
     padding: 4px 10px 7px;
