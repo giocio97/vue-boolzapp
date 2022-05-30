@@ -2,6 +2,7 @@ const whatsjs = new Vue({
     el: "#appjs",
     data: {
         activeChat: 0,
+        newMex:"",
         contacts: [
             {
                 name: 'Michele',
@@ -178,7 +179,25 @@ const whatsjs = new Vue({
             } else{
                 return "inviato"
             }
+        },
+        addMex(newMex){
+            const nuovoMessaggio = {
+                         message:this.newMex,
+                        status: 'sent',
+            }
+
+            const nuovoMessaggioRisp = {
+                message:"ok",
+               status: `received`,
+   }
+
+            if(this.newMex!==""){
+                this.contacts.messages.push(nuovoMessaggio);
+                this.newMex = "";
+                setInterval( this.contacts.messages.push(nuovoMessaggioRisp), 1000)
+            }
         }
+
     }
         
         

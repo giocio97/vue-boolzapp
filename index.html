@@ -146,20 +146,7 @@
                   </div>
 
            
-                <!-- <div class="row message-body">
-                    <div class="col-sm-12 message-main-receiver">
-                      <div class="ricevuto">
-                        <div class="message-text">
-                          
-                        </div>
-                        <span class=" col-sm-1 offset-md-8 message-time">
-                            12:00
-                           </span>
-                        
-                      </div>
-                    </div>
-                  </div>
-               </div> -->
+               
           
                   
               
@@ -187,7 +174,7 @@
                         <i class="far fa-smile"></i>
                     </div>
                     <div class="col-sm-10 col-xs-10 ">
-                        <input  type="text" placeholder="scrivi un messaggio">
+                        <input  type="text" placeholder="scrivi un messaggio" v-model="newMex" @keyup.enter="addMex">
                     </div>
                     <div class="col-sm-1 col-xs-1 ">
                         <i class="fas fa-microphone"></i>
