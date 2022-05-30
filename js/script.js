@@ -5,7 +5,7 @@ const whatsjs = new Vue({
         contacts: [
             {
                 name: 'Michele',
-                avatar: 'https://avataaars.io/?avatarStyle=Circle&topType=LongHairFro&accessoriesType=Blank&hairColor=Blonde&facialHairType=BeardLight&facialHairColor=BrownDark&clotheType=Hoodie&clotheColor=Pink&eyeType=Hearts&eyebrowType=UpDown&mouthType=Tongue&skinColor=Pale',
+                avatar:'https://avataaars.io/?avatarStyle=Circle&topType=LongHairFro&accessoriesType=Blank&hairColor=Blonde&facialHairType=BeardLight&facialHairColor=BrownDark&clotheType=Hoodie&clotheColor=Pink&eyeType=Hearts&eyebrowType=UpDown&mouthType=Tongue&skinColor=Pale',
                 visible: true,
                 messages: [
                     {
@@ -27,7 +27,7 @@ const whatsjs = new Vue({
             },
             {
                 name: 'Fabio',
-                avatar: '_2',
+                avatar: 'https://avataaars.io/?avatarStyle=Circle&topType=ShortHairShortWaved&accessoriesType=Blank&hairColor=Blue&facialHairType=BeardMedium&facialHairColor=BrownDark&clotheType=CollarSweater&clotheColor=Blue01&eyeType=Happy&eyebrowType=FlatNatural&mouthType=Disbelief&skinColor=Brown',
                 visible: true,
                 messages: [
                     {
@@ -49,7 +49,7 @@ const whatsjs = new Vue({
             },
             {
                 name: 'Samuele',
-                avatar: '_3',
+                avatar: 'https://avataaars.io/?avatarStyle=Circle&topType=Hat&accessoriesType=Prescription02&facialHairType=MoustacheMagnum&facialHairColor=Black&clotheType=ShirtScoopNeck&clotheColor=Pink&eyeType=Squint&eyebrowType=Default&mouthType=Sad&skinColor=DarkBrown',
                 visible: true,
                 messages: [
                     {
@@ -71,7 +71,7 @@ const whatsjs = new Vue({
             },
             {
                 name: 'Alessandro B.',
-                avatar: '_4',
+                avatar: 'https://avataaars.io/?avatarStyle=Circle&topType=NoHair&accessoriesType=Prescription01&hairColor=Auburn&facialHairType=BeardLight&facialHairColor=Blonde&clotheType=BlazerShirt&clotheColor=PastelYellow&eyeType=EyeRoll&eyebrowType=UpDownNatural&mouthType=Serious&skinColor=Light',
                 visible: true,
                 messages: [
                     {
@@ -88,7 +88,7 @@ const whatsjs = new Vue({
             },
             {
                 name: 'Alessandro L.',
-                avatar: '_5',
+                avatar: 'https://avataaars.io/?avatarStyle=Circle&topType=ShortHairDreads01&accessoriesType=Prescription01&hairColor=Blonde&facialHairType=BeardMedium&facialHairColor=BlondeGolden&clotheType=GraphicShirt&clotheColor=PastelBlue&graphicType=Deer&eyeType=Hearts&eyebrowType=UnibrowNatural&mouthType=Default&skinColor=Light',
                 visible: true,
                 messages: [
                     {
@@ -105,7 +105,7 @@ const whatsjs = new Vue({
             },
             {
                 name: 'Claudia',
-                avatar: '_6',
+                avatar: 'https://avataaars.io/?avatarStyle=Circle&topType=LongHairMiaWallace&accessoriesType=Round&hairColor=BrownDark&facialHairType=Blank&clotheType=ShirtCrewNeck&clotheColor=Gray02&eyeType=Default&eyebrowType=DefaultNatural&mouthType=Default&skinColor=Tanned',
                 visible: true,
                 messages: [
                     {
@@ -127,7 +127,7 @@ const whatsjs = new Vue({
             },
             {
                 name: 'Federico',
-                avatar: '_7',
+                avatar: 'https://avataaars.io/?avatarStyle=Circle&topType=ShortHairShortRound&accessoriesType=Wayfarers&hairColor=BrownDark&facialHairType=BeardLight&facialHairColor=Black&clotheType=GraphicShirt&clotheColor=Gray01&graphicType=Selena&eyeType=WinkWacky&eyebrowType=Angry&mouthType=Concerned&skinColor=Pale',
                 visible: true,
                 messages: [
                     {
@@ -144,7 +144,7 @@ const whatsjs = new Vue({
             },
             {
                 name: 'Davide',
-                avatar: '_8',
+                avatar: 'https://avataaars.io/?avatarStyle=Circle&topType=Eyepatch&accessoriesType=Kurt&hairColor=BrownDark&facialHairType=BeardMedium&facialHairColor=BlondeGolden&clotheType=ShirtScoopNeck&clotheColor=Blue02&eyeType=Default&eyebrowType=UpDown&mouthType=Smile&skinColor=Light',
                 visible: true,
                 messages: [
                     {
