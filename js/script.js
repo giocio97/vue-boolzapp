@@ -193,9 +193,9 @@ const whatsjs = new Vue({
 
             if(this.newMex!==""){
                
-                this.contacts[activeChat].messages.push(nuovoMessaggio);
+                this.contacts[this.activeChat].messages.push(nuovoMessaggio);
                 this.newMex = "";
-                setInterval( this.contacts[activeChat].messages.push(nuovoMessaggioRisp), 1000)
+                setInterval( this.contacts[this.activeChat].messages.push(nuovoMessaggioRisp), 1000)
             }
         }
 
