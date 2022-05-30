@@ -132,8 +132,8 @@
                
                <div v-for="item in contacts[activeChat].messages"  :key="i">
                 <div  class="row message-body">
-                    <div class="col-sm-12 message-main-sender">
-                      <div :class="inviatoORicevuto(item.status)" class="inviato">
+                    <div class="col-sm-12 message-main">
+                      <div :class="inviatoORicevuto(item.status)" >
                         <div class="message-text">
                         {{item.message}}
                         </div>
@@ -145,28 +145,12 @@
                     </div>
                   </div>
 
-                  <!-- <div class="row message-body">
-                    <div class="col-sm-11 message-main-sender">
-                      <div class="inviato">
-                        <div class="message-text">
-                          Ricordati di stendere i panni
-                        </div>
-                        <span class=" col-sm-1 offset-md-10 message-time">
-                            12:00
-                           </span>
-                        
-                      </div>
-                    </div>
-                   
-                  </div> -->
-
-
-
-                <div class="row message-body">
+           
+                <!-- <div class="row message-body">
                     <div class="col-sm-12 message-main-receiver">
                       <div class="ricevuto">
                         <div class="message-text">
-                         Tutto fatto.
+                          
                         </div>
                         <span class=" col-sm-1 offset-md-8 message-time">
                             12:00
@@ -175,7 +159,7 @@
                       </div>
                     </div>
                   </div>
-               </div>
+               </div> -->
           
                   
               
@@ -183,7 +167,17 @@
                   
                    
             </div>
-            <div class="col-6 col-md-4 vuoto"></div>
+            
+           
+            
+           
+            
+            
+            
+                
+
+        </div>
+        <div class="col-6 col-md-4 vuoto"></div>
             
 
             <!-- fotter invio messaggi -->
@@ -203,15 +197,6 @@
                    
                     
                 </div>
-           
-            
-           
-            
-            
-            
-                
-
-        </div>
 
         
     </div>
