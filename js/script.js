@@ -3,6 +3,7 @@ const whatsjs = new Vue({
     data: {
         activeChat: 0,
         newMex:"",
+        searchBar:"",
         contacts: [
             {
                 name: 'Michele',
@@ -195,9 +196,18 @@ const whatsjs = new Vue({
                
                 this.contacts[this.activeChat].messages.push(nuovoMessaggio);
                 this.newMex = "";
-                setInterval( this.contacts[this.activeChat].messages.push(nuovoMessaggioRisp), 1000)
+                setTimeout(() => {
+                    this.contacts[this.activeChat].messages.push(nuovoMessaggioRisp)
+                }, 1000);
             }
-        }
+        },
+
+        ricercaContatti(searchBar){
+            if(this.searchBar == this.contacts.name){
+                
+            }
+        },
+
 
     }
         

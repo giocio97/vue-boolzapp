@@ -109,6 +109,9 @@ width: 100%;
 .contatti ul li:hover {
   background-color: #f2f2f2;
 }
+.active-chat{
+  background-color: #f2f2f2;
+}
 
 .message-body {
    
@@ -138,6 +141,7 @@ width: 100%;
   .message-time {
     font-size: 8px;
     color: #9a9a9a;
+    
   
   }
 
@@ -151,6 +155,7 @@ width: 100%;
     word-wrap: break-word;
     display: inline-block;
     margin-top: 20px;
+    min-width: 20%;
   }
   
   .inviato {
@@ -163,7 +168,18 @@ width: 100%;
     text-shadow: 0 1px 1px rgba(0, 0, 0, .2);
     word-wrap: break-word;
     margin-top: 20px;
+    min-width: 20%;
   }
+
+  #icon-menu{
+    display: none;
+  }
+
+  .message-body:hover #icon-menu {
+    display: block;
+    cursor: pointer;
+  }
+
 
 .footer-text{
     background-color: #f3eeea;
