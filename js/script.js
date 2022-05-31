@@ -202,10 +202,14 @@ const whatsjs = new Vue({
             }
         },
 
-        ricercaContatti(searchBar){
-            if(this.searchBar == this.contacts.name){
-                
-            }
+         // if(this.searchBar == this.contacts.name){
+
+            // }
+
+        ricercaContatti(){
+             this.contacts.forEach( contact => {
+               console.log(contact);
+            });
         },
 
 
